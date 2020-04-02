@@ -1,0 +1,27 @@
+@import "./abstracts/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  background-attachment: fixed;
+  background-color: $white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}

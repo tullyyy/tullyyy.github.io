@@ -1,0 +1,12 @@
+@import "./abstracts/variables";
+
+.button-toggle {
+  font-size: 1.2em;
+  margin: 1em;
+  color: $white;
+  background-color: $black;
+  z-index: 1;
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}

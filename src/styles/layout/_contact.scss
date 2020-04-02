@@ -1,0 +1,37 @@
+@import "./abstracts/variables";
+.contact-container {
+  position: fixed;
+  top: 10%;
+  right: 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 13em;
+  padding: 1em;
+  min-width: 4em;
+  background-color: black;
+  opacity: $opacity-dark;
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+
+  .icon {
+    font-size: 2em;
+    margin: 0 0 0 0.1em;
+    color: white;
+    opacity: $opacity;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .linkedin-icon {
+    margin-left: 0.12em;
+  }
+
+  .envelope-icon {
+    // margin: 0;
+    font-size: 1.9em;
+  }
+}
