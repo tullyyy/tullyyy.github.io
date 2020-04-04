@@ -1,42 +1,30 @@
 @import "./abstracts/breakpoints";
 
-@mixin xs {
-  @media (min-width: #{$screen-xs-min}) {
-    @content;
-  }
-}
-
-// Small devices
-@mixin sm {
-  @media (min-width: #{$screen-sm-min}) {
-    @content;
-  }
-}
-
-// Medium devices
-@mixin md {
-  @media (min-width: #{$screen-md-min}) {
-    @content;
-  }
-}
-
-// Large devices
-@mixin lg {
-  @media (min-width: #{$screen-lg-min}) {
-    @content;
-  }
-}
-
-// Extra large devices
-@mixin xl {
-  @media (min-width: #{$screen-xl-min}) {
-    @content;
-  }
-}
-
-//rigidly defined breakpoints
-@mixin rwd($screen) {
-  @media (min-width: $screen+"px") {
-    @content;
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 70em) {
+      //1120px
+      @content;
+    }
+  } @else if $point == laptop {
+    @media (min-width: 64em) {
+      //1024px
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: 50em) {
+      //800px
+      @content;
+    }
+  } @else if $point == xlmobile {
+    @media (min-width: 37.5em) {
+      //600px
+      @content;
+    }
+  } @else if $point == mobile {
+    @media (max-width: 37.5em) {
+      //<600px
+      @content;
+    }
   }
 }

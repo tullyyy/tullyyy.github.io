@@ -2,9 +2,17 @@
 
 .about-toggle {
   position: fixed;
-  bottom: -1.1em;
-  right: 1em;
-  padding: 1em 2.5em;
+  bottom: -2.6%;
+  right: 2%;
+  padding: 1.5% 3%;
+
+  @include breakpoint(mobile) {
+    padding: 2% 3%;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 1.5% 3%;
+  }
 }
 
 .about-container {
@@ -22,47 +30,201 @@
     justify-content: space-between;
     opacity: $opacity-dark;
     background-color: $white;
-    height: 75%;
-    width: 80%;
-    margin-top: -3%;
-    padding: 7em 0 2em 0;
     box-shadow: 25px 25px 50px #dbdbdb, -25px -25px 50px #ffffff;
 
-    .about-text-wrapper {
-      display: flex;
-      flex-direction: row;
+    @include breakpoint(mobile) {
+      padding: 4em 0 1em 0;
+      height: 75%;
+      width: 100%;
+      margin-top: -3%;
+      align-content: space-around;
       justify-content: space-around;
-      margin: 1em 2em 0 2em;
+    }
+
+    @include breakpoint(xlmobile) {
+      padding: 4em 0 1em 0;
+      height: 75%;
+      width: 90%;
+      margin-top: -3%;
+      align-content: space-around;
+      justify-content: space-around;
+    }
+
+    @include breakpoint(tablet) {
+      height: 80%;
+      width: 85%;
+      margin-top: -3%;
+      padding: 5em 1em 2em 0;
+      align-content: space-around;
+      justify-content: space-around;
+    }
+
+    @include breakpoint(laptop) {
+      height: 76%;
+      width: 80%;
+      padding: 6em 0 2em 0;
+      margin-top: -3%;
+    }
+
+    .about-text-wrapper {
+      @include breakpoint(mobile) {
+        display: flex;
+        flex-flow: column-reverse;
+        align-content: space-around;
+        margin: 0.5em 1em 0 1em;
+        overflow: scroll;
+      }
+
+      @include breakpoint(xlmobile) {
+        display: flex;
+        flex-flow: column-reverse;
+        margin: 0.5em 1em 0 1em;
+        overflow: scroll;
+      }
+
+      @include breakpoint(tablet) {
+        display: flex;
+        flex-flow: column-reverse;
+        margin: 1em 1em 0 1em;
+        overflow: visible;
+      }
+
+      @include breakpoint(laptop) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 1em 2em 0 2em;
+        // overflow: scroll;
+      }
     }
 
     .about-text {
-      width: 50%;
       align-self: center;
+
+      @include breakpoint(mobile) {
+        width: 90%;
+      }
+
+      @include breakpoint(xlmobile) {
+        width: 85%;
+      }
+
+      @include breakpoint(tablet) {
+        width: 80%;
+      }
+
+      @include breakpoint(laptop) {
+        width: 60%;
+      }
 
       h2 {
         margin-bottom: 1em;
+
+        @include breakpoint(mobile) {
+          margin-bottom: 0.4em;
+          font-size: 1em;
+        }
+
+        @include breakpoint(xlmobile) {
+          margin-bottom: 0.6em;
+          font-size: 1.2em;
+        }
+
+        @include breakpoint(tablet) {
+          margin-bottom: 0.8em;
+          font-size: 1.2em;
+        }
+
+        @include breakpoint(laptop) {
+          margin-bottom: 1em;
+          font-size: 1.4em;
+        }
+        @include breakpoint(desktop) {
+          font-size: 1.6em;
+        }
       }
       p {
         margin: 0.8em 1em;
+
+        @include breakpoint(mobile) {
+          font-size: 0.8em;
+        }
+
+        @include breakpoint(xlmobile) {
+          font-size: 0.9em;
+        }
+
+        @include breakpoint(tablet) {
+          font-size: 1em;
+        }
+
+        @include breakpoint(laptop) {
+          font-size: 1em;
+        }
+        @include breakpoint(desktop) {
+          font-size: 1.2em;
+        }
       }
     }
     img {
-      width: 17em;
-      height: 17em;
       border-radius: 50%;
       align-self: center;
       opacity: 1;
       z-index: 1;
+
+      @include breakpoint(mobile) {
+        width: 10em;
+        height: 10em;
+      }
+
+      @include breakpoint(xlmobile) {
+        width: 11em;
+        height: 11em;
+      }
+
+      @include breakpoint(tablet) {
+        width: 13em;
+        height: 13em;
+      }
+
+      @include breakpoint(laptop) {
+        width: 16em;
+        height: 16em;
+      }
+      @include breakpoint(desktop) {
+        width: 16em;
+        height: 16em;
+      }
     }
 
     .about-footer {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
+      margin: 0.5em 0.5em;
 
       .icon {
-        font-size: 3em;
         margin: 0 0.5em;
+
+        @include breakpoint(mobile) {
+          font-size: 1.2em;
+        }
+
+        @include breakpoint(xlmobile) {
+          font-size: 2em;
+        }
+
+        @include breakpoint(tablet) {
+          font-size: 2.2em;
+        }
+
+        @include breakpoint(laptop) {
+          font-size: 2.2em;
+        }
+
+        @include breakpoint(desktop) {
+          font-size: 2.8em;
+        }
       }
     }
   }
@@ -70,22 +232,95 @@
     text-transform: uppercase;
     background-color: $black;
     opacity: $opacity-dark;
-    width: 55%;
-    height: 20%;
-    padding: 3% 0;
     text-align: center;
     position: relative;
     bottom: -6%;
     z-index: 2;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint(mobile) {
+      width: 65%;
+      height: 10%;
+      padding: 2% 0;
+    }
+
+    @include breakpoint(xlmobile) {
+      width: 65%;
+      height: 15%;
+      padding: 2% 0;
+    }
+
+    @include breakpoint(tablet) {
+      width: 65%;
+      height: 15%;
+      padding: 2% 0;
+    }
+
+    @include breakpoint(laptop) {
+      width: 60%;
+      height: 15%;
+      padding: 2% 0;
+    }
+
+    @include breakpoint(desktop) {
+      width: 58%;
+      height: 20%;
+      padding: 3% 0;
+    }
 
     h1 {
       font-weight: 700;
       letter-spacing: 0.3em;
+      @include breakpoint(mobile) {
+        font-size: 1.1em;
+      }
+
+      @include breakpoint(xlmobile) {
+        font-size: 1.3em;
+      }
+
+      @include breakpoint(tablet) {
+        font-size: 1.5em;
+      }
+
+      @include breakpoint(laptop) {
+        font-size: 2em;
+      }
+
+      @include breakpoint(desktop) {
+        font-size: 3em;
+      }
     }
     h2 {
       font-weight: 300;
       letter-spacing: 0.2em;
+
+      @include breakpoint(mobile) {
+        font-size: 0.9em;
+        margin: 0 0.5em;
+      }
+
+      @include breakpoint(xlmobile) {
+        font-size: 1.1em;
+        margin: 0 0.5em;
+      }
+
+      @include breakpoint(tablet) {
+        font-size: 1.1em;
+        margin: 0 1em;
+      }
+
+      @include breakpoint(laptop) {
+        font-size: 1.3em;
+      }
+
+      @include breakpoint(desktop) {
+        font-size: 1.5em;
+      }
     }
   }
 }

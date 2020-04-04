@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Nemo from "./img/nemo.png";
-import Survey from "./img/survey.png";
+import Momentum from "./img/momentum.png";
 import GHC from "./img/ghc.png";
 import BKG from "./img/bkg.png";
 import Tables from "./img/tables.png";
@@ -25,7 +25,7 @@ class Portfolio extends Component {
                   <h2>Momentum Clone</h2>
                 </div>
                 <div className="portfolio-image">
-                  <img src={Survey} alt="" />
+                  <img src={Momentum} alt="" />
                 </div>
 
                 <div className="portfolio-text">
@@ -54,8 +54,8 @@ class Portfolio extends Component {
                     This page! Check out what I've done here.
                   </p>
                   <p className="portfolio-techstack">
-                    <strong>Tech Stack:</strong> ReactJS (JavaScript), HTML, CSS
-                    (SCSS)
+                    <strong>Tech Stack:</strong> ReactJS (JavaScript), HTML,
+                    SCSS (CSS)
                   </p>
                 </div>
               </div>
