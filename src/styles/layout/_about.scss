@@ -33,10 +33,10 @@
     box-shadow: 25px 25px 50px #dbdbdb, -25px -25px 50px #ffffff;
 
     @include breakpoint(mobile) {
-      padding: 4em 0 1em 0;
+      padding: 3em 0 1em 0;
       height: 75%;
       width: 100%;
-      margin-top: -3%;
+      margin-top: -6%;
       align-content: space-around;
       justify-content: space-around;
     }
@@ -173,8 +173,8 @@
       z-index: 1;
 
       @include breakpoint(mobile) {
-        width: 10em;
-        height: 10em;
+        width: 8em;
+        height: 8em;
       }
 
       @include breakpoint(xlmobile) {
@@ -207,7 +207,8 @@
         margin: 0 0.5em;
 
         @include breakpoint(mobile) {
-          font-size: 1.2em;
+          font-size: 1.1em;
+          margin: 0 0.3em;
         }
 
         @include breakpoint(xlmobile) {
@@ -243,9 +244,10 @@
     justify-content: center;
 
     @include breakpoint(mobile) {
-      width: 65%;
-      height: 10%;
-      padding: 2% 0;
+      width: 70%;
+      height: 11%;
+      padding: 2% 2%;
+      margin-top: 4%;
     }
 
     @include breakpoint(xlmobile) {
