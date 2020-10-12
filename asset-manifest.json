@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c9f53dc0.chunk.css",
+    "main.js": "/static/js/main.cf6ce41b.chunk.js",
+    "main.js.map": "/static/js/main.cf6ce41b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e3714b34.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e3714b34.js.map",
+    "static/js/2.e18b52d9.chunk.js": "/static/js/2.e18b52d9.chunk.js",
+    "static/js/2.e18b52d9.chunk.js.map": "/static/js/2.e18b52d9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8d8539002497d1e781dd6ebe2bdc37f7.js": "/precache-manifest.8d8539002497d1e781dd6ebe2bdc37f7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c9f53dc0.chunk.css.map": "/static/css/main.c9f53dc0.chunk.css.map",
+    "static/js/2.e18b52d9.chunk.js.LICENSE.txt": "/static/js/2.e18b52d9.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/bg.1b4c77e3.png",
+    "static/media/bkg.png": "/static/media/bkg.b15bd96c.png",
+    "static/media/ghc.png": "/static/media/ghc.1087bcce.png",
+    "static/media/me.png": "/static/media/me.0a8dc284.png",
+    "static/media/momentum.png": "/static/media/momentum.b8eff2c7.png",
+    "static/media/nemo.png": "/static/media/nemo.6cf59d71.png",
+    "static/media/portfolio.png": "/static/media/portfolio.28adc536.png",
+    "static/media/tables.png": "/static/media/tables.8f3283ca.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3714b34.js",
+    "static/js/2.e18b52d9.chunk.js",
+    "static/css/main.c9f53dc0.chunk.css",
+    "static/js/main.cf6ce41b.chunk.js"
+  ]
+}
