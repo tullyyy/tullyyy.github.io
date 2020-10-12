@@ -35,9 +35,10 @@ class Portfolio extends Component {
                   </p>
                   <p className="portfolio-techstack">
                     <strong>Tech Stack:</strong> ReactJS (JavaScript), Laravel
-                    (PHP), SQL (PHPMyAdmin), HTML, SCSS (CSS)
+                    (PHP), SQL, HTML, SCSS (CSS)
                   </p>
                 </div>
+                {/* <div className="portfolio-footer"> <p></p> Link / Code</div> */}
               </div>
             </Fade>
             <Fade right>
@@ -51,7 +52,8 @@ class Portfolio extends Component {
 
                 <div className="portfolio-text">
                   <p className="portfolio-description">
-                    This page! Check out what I've done here.
+                    This page! Check out what I've done here and let me know
+                    what you think.
                   </p>
                   <p className="portfolio-techstack">
                     <strong>Tech Stack:</strong> ReactJS (JavaScript), HTML,
@@ -103,7 +105,7 @@ class Portfolio extends Component {
             <Fade left>
               <div className="portfolio-card">
                 <div className="portfolio-title">
-                  <h2>Tables</h2>
+                  <h2>Tables </h2>
                 </div>
                 <div className="portfolio-image">
                   <img src={Tables} alt="" />
@@ -111,7 +113,8 @@ class Portfolio extends Component {
 
                 <div className="portfolio-text">
                   <p className="portfolio-description">
-                    A small project to show gradients and recreate data tables
+                    A small project to show gradients and recreate data tables.
+                    This also shows a hover effect.
                   </p>
                   <p className="portfolio-techstack">
                     <strong>Tech Stack:</strong> HTML, CSS
@@ -122,7 +125,7 @@ class Portfolio extends Component {
             <Fade right>
               <div className="portfolio-card">
                 <div className="portfolio-title">
-                  <h2>Nemo's Personal Website</h2>
+                  <h2>Nemo's Website</h2>
                 </div>
                 <div className="portfolio-image">
                   <img src={Nemo} alt="" />
@@ -130,7 +133,8 @@ class Portfolio extends Component {
 
                 <div className="portfolio-text">
                   <p className="portfolio-description">
-                    Portfolio page for my cat Nemo, the Destroyer
+                    Portfolio page for a cat, Nemo. A basic website to showcase
+                    minimalist styling and SCSS.
                   </p>
                   <p className="portfolio-techstack">
                     <strong>Tech Stack:</strong> HTML, SCSS (CSS)
